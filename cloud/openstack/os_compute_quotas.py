@@ -29,8 +29,8 @@ DOCUMENTATION = '''
 module: os_compute_quotas
 short_description: Update/Delete compute quotas in a OpenStack tenant.
 extends_documentation_fragment: openstack
-author: "Ghe Rivero (@GheRivero)" and "Andrea Mercanti (@mercantiandrea)"
-version_added: "2.2"
+author: "Ghe Rivero (@GheRivero) and Andrea Mercanti (@mercantiandrea)"
+version_added: "2.3"
 description:
    - Update or delete compute quotas in a OpenStack tenant.
 options:

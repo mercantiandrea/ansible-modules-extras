@@ -30,7 +30,7 @@ module: os_network_quotas
 short_description: Update/Delete network quotas in a OpenStack tenant.
 extends_documentation_fragment: openstack
 author: "Andrea Mercanti (@mercantiandrea)"
-version_added: "2.2"
+version_added: "2.3"
 description:
    - Update or delete network quotas in a OpenStack tenant.
 options:
@@ -60,7 +60,14 @@ EXAMPLES = '''
     state: present
     quota:
       floatingip: 33
+      healthmonitor: 33
+      ikepolicy: 33
+      ipsec_site_connection: 33
+      ipsecpolicy: 33
+      listener: 33
+      loadbalancer: 33
       network: 33
+      pool: 33
       port: 33
       rbac_policy: 33
       router: 33
@@ -68,6 +75,7 @@ EXAMPLES = '''
       security_group_rule: 33
       subnet: 33
       subnetpool: 33
+      vpnservice: 33
 
 # Delete quotas for the tenant 'demo' and back to defaults
 - os_network_quotas:

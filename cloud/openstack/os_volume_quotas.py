@@ -30,7 +30,7 @@ module: os_volume_quotas
 short_description: Update/Delete volume quotas in a OpenStack tenant.
 extends_documentation_fragment: openstack
 author: "Andrea Mercanti (@mercantiandrea)"
-version_added: "2.2"
+version_added: "2.3"
 description:
    - Update or delete volume quotas in a OpenStack tenant.
 options:
